@@ -1,4 +1,5 @@
 [project]
+authors = [{ name = "Harshal Laheri", email = "harshal@harshallaheri.me" }]
 dependencies = [
     "advanced-alchemy[obstore]>=1.4.5",
     "aiosqlite>=0.21.0",

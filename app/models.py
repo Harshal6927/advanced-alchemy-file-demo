@@ -20,10 +20,7 @@ class NoteModel(BigIntAuditBase):
 class FileModel(BigIntAuditBase):
     __tablename__ = "files"
 
-    blob: Mapped[FileObject] = mapped_column(
-        StoredObject(backend="note_files"),
-        nullable=True,
-    )
+    blob: Mapped[FileObject] = mapped_column(StoredObject(backend="note_files"))
     note_id: Mapped[int] = mapped_column(ForeignKey("notes.id", ondelete="CASCADE"))
 
     # -----------------

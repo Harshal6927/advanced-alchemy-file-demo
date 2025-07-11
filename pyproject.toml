@@ -1,0 +1,31 @@
+[project]
+dependencies = [
+    "advanced-alchemy[obstore]>=1.4.5",
+    "aiosqlite>=0.21.0",
+    "litestar[standard]>=2.16.0",
+    "pre-commit>=4.2.0",
+    "python-dotenv>=1.1.1",
+]
+description = "Add your description here"
+name = "file-storage-demo"
+readme = "README.md"
+requires-python = ">=3.12"
+version = "0.1.0"
+
+
+[tool.ruff]
+line-length = 120
+lint.ignore = [
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D106",
+    "CPY001",
+    "RUF012",
+    "RUF029",
+    "ERA001",
+    "PLR6301",
+]
